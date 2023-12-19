@@ -333,3 +333,9 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
     display: none;
   }
 }
+
+@media (max-width: 580px) {
+  .projects{
+    padding: 80px 80px;
+  }
+}
