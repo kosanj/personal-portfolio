@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<!-- Required for bootstrap 5 -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- general setup -->
+		<title>Web Design Sample</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel=""stylesheet" href = https://fonts.googleapis.com/css? family="Dosis&display=swap">
+
+		<!-- Include jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<!-- Include your JavaScript file -->
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+
+		<div class="header_bar">
+			<div class="navbar"> <!-- Navigation Bar at Top Left -->
+				<img src="img/logo_anj2.png" width="200" height="70">
+				<ul>
+					<li><a href="index.html">Home</a></li> <!-- href="#" means a link that leads nowhere (for now) -->
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>
+				
+				<div class="navbar-icons">
+					<a href="https://linkedin.com/in/anjalikosuri" target="_blank">
+						<img src="img/linkedin.png">
+					</a>
+					<a href="https://github.com/kosanj?tab=repositories" target="_blank">
+						<img src="img/github.png">
+					</a>
+					<a href="mailto:anjali.kosuri@gmail.com" target="_blank">
+						<img src="img/mail.png">
+					</a>
+				</div>
+
+				<div class="dropdown">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  ≡
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+					  <h6 class="dropdown-header">Internal Pages</h6>
+					  <a class="dropdown-item" href="index.html">Home</a>
+					  <a class="dropdown-item" href="about.html">About</a>
+					  <a class="dropdown-item" href="projects.html">Projects</a>
+
+					  <h6 class="dropdown-header">External Links</h6>
+					  <div class="navbar-icons-in-dropdown">
+						<div class="row">
+							<div class="col"><a href="https://linkedin.com/in/anjalikosuri" target="_blank"> 
+								<img src="img/linkedin.png" class="img-fluid" alt="LinkedIn">
+							</a></div>
+							<div class="col"><a href="https://github.com/kosanj?tab=repositories" target="_blank"> 
+								<img src="img/github.png" class="img-fluid" alt="GitHub">
+							</a></div>
+							<div class="col"><a href="mailto:anjali.kosuri@gmail.com" target="_blank"> 
+								<img src="img/mail.png" class="img-fluid" alt="Mail">
+							</a></div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				  
+			</div>
+		</div>
+
+		<div class="mainpage">
+			<img class="homepage_graphic" src="img/homepage_graphic3_filtered.png">
+			<div class="centered" style="font-size: 8em;font-family: Marker Felt, fantasy;">Welcome</div>
+			<div class="under-centered" style="font-size: 1em;font-family: Marker Felt, fantasy;">Hello... I'm Anjali Kosuri, a Biomedical + Mechatronics Engineering Student</div>
+			<button type="button" class="btn custom-moreinfo-btn under-under-centered" data-toggle="modal" data-target="#resume_modal">View Resume</button>
+		</div>
+
+		<!--Modal 8-->
+        <div class="modal fade" id="resume_modal" tabindex="-1" role="dialog" aria-labelledby="resume_modal_title" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="resume_modal_title">Anjali Kosuri's Resume</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body" id="pdfContainer" style="justify-content: center; text-align: center; overflow-y: auto;">
+				  <!-- Instead - delete the js file and the id pdfContainer in the line above, and this will work, but pdf zoom won't resize
+					<object 
+					type="application/pdf"
+					id="pdfObject"
+					width="100%"
+					height="700"
+					style="margin: auto;"
+				  ></object>
+				  -->
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- bootstrap required scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>

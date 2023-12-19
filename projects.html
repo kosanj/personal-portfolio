@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<!-- Required for bootstrap 4 -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- general setup -->
+		<title>Web Design Sample</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel=""stylesheet" href = https://fonts.googleapis.com/css? family="Dosis&display=swap">
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="header_bar">
+			<div class="navbar"> <!-- Navigation Bar at Top Left -->
+				<img src="img/logo_anj2.png" width="200" height="70">
+				<ul>
+					<li><a href="index.html">Home</a></li> <!-- href="#" means a link that leads nowhere (for now) -->
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>
+				
+				<div class="navbar-icons">
+					<a href="https://linkedin.com/in/anjalikosuri" target="_blank">
+						<img src="img/linkedin.png">
+					</a>
+					<a href="https://github.com/kosanj?tab=repositories" target="_blank">
+						<img src="img/github.png">
+					</a>
+					<a href="mailto:anjali.kosuri@gmail.com" target="_blank">
+						<img src="img/mail.png">
+					</a>
+				</div>
+
+				<div class="dropdown">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  ≡
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+					  <h6 class="dropdown-header">Internal Pages</h6>
+					  <a class="dropdown-item" href="index.html">Home</a>
+					  <a class="dropdown-item" href="about.html">About</a>
+					  <a class="dropdown-item" href="projects.html">Projects</a>
+
+					  <h6 class="dropdown-header">External Links</h6>
+					  <div class="navbar-icons-in-dropdown">
+						<div class="row">
+							<div class="col"><a href="https://linkedin.com/in/anjalikosuri" target="_blank"> 
+								<img src="img/linkedin.png" class="img-fluid" alt="LinkedIn">
+							</a></div>
+							<div class="col"><a href="https://github.com/kosanj?tab=repositories" target="_blank"> 
+								<img src="img/github.png" class="img-fluid" alt="GitHub">
+							</a></div>
+							<div class="col"><a href="mailto:anjali.kosuri@gmail.com" target="_blank"> 
+								<img src="img/mail.png" class="img-fluid" alt="Mail">
+							</a></div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				  
+			</div>
+		</div>
+
+        <div class="projects">
+            <div class="projects-grid">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <!-- TEMPLATE
+                        <div class="col mb-5"><div class="card">
+                          <img src="img/homepage_graphic3.png">
+                          <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">LLL<br><br><br></p>
+                              <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal6">
+                                  More Info
+                              </button>
+                          </div>
+                        </div></div>
+                        -->
+                        
+                        <div class="col mb-5"><div class="card">
+                          <img src="img/project11_1.png">
+                          <div class="card-body">
+                              <h5 class="card-title">Personal Portfolio Website</h5>
+                              <p class="card-text">Used HTML, CSS, Javascript to create a website to showcase personal projects and skills.<br><br></p>
+                              <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal11">
+                                  More Info
+                              </button>
+                          </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project1_pacemaker_titleimage.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Safety-Critical Pacemaker</h5>
+                                <p class="card-text">Implemented various pacemaker modes using Matlab Simulink integrated with a python GUI through serial communication.</p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal1">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project2_cartcentering_titleimage.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Cart-Centering Problem</h5>
+                                <p class="card-text">Used data structures in a genetic programming application for finding the best solution to center the cart.<br><br></p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal2">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project3_stnumcircuit_1.png">
+                            <div class="card-body">
+                                <h5 class="card-title">7-seg Display Digital Circuit</h5>
+                                <p class="card-text">Using digital logic, developed a circuit that cycled through my student number.<br><br></p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal3">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project4_2.png">
+                            <div class="card-body">
+                                <h5 class="card-title">McMaster Grades Visual Dashboard</h5>
+                                <p class="card-text">A Selenium + Python GUI desktop application to display a student's grades in a user-friendly format.<br></p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal4">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project5_3.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Walk-N-Roll: A 2-in-1 <br>Walker-Wheelchair</h5>
+                                <p class="card-text">Built a high-level prototype for a 2-in-1 walker wheelchair based on a real patient's needs.<br></p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal5">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                            <img src="img/project6_1.png">
+                            <div class="card-body">
+                                <h5 class="card-title">GenuCheck</h5>
+                                <p class="card-text">Used Raspberry pi to prototype a knee rehab device, able to monitor the angle of the knee & send out an alert if the max threshold was exceeded.</p>
+                                <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal6">
+                                    More Info
+                                </button>
+                            </div>
+                        </div></div>
+                        <div class="col mb-5"><div class="card">
+                          <img src="img/project7_1.png">
+                          <div class="card-body">
+                              <h5 class="card-title">CAD Custom Hip Implant</h5>
+                              <p class="card-text">Used Autodesk Inventor to model a hip implant for a patient with Legg-Calvé-Perthes Disease.<br><br></p>
+                              <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal7">
+                                  More Info
+                              </button>
+                          </div>
+                      </div></div>
+                      <div class="col mb-5"><div class="card">
+                        <img src="img/project8_1.png">
+                        <div class="card-body">
+                            <h5 class="card-title">MagnOstomy</h5>
+                            <p class="card-text">A custom ostomy bag complete with an alert system to indicate if the bag is secure.<br><br></p>
+                            <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal8">
+                                More Info
+                            </button>
+                        </div>
+                    </div></div>
+                    <div class="col mb-5"><div class="card">
+                      <img src="img/project9_2.png">
+                      <div class="card-body">
+                          <h5 class="card-title">Tic Tac Toe</h5>
+                          <p class="card-text">Java GUI Tic Tac Toe against a CPU (various difficulty levels).<br><br><br></p>
+                          <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal9">
+                              More Info
+                          </button>
+                      </div>
+                    </div></div>
+                    <div class="col mb-5"><div class="card">
+                      <img src="img/project10_1.png">
+                      <div class="card-body">
+                          <h5 class="card-title">Matching Game GUI</h5>
+                          <p class="card-text">Matching game with cross-platform compatibility (checks if icons are available on the device, otherwise switches to numbers).<br></p>
+                          <button type="button" class="btn custom-moreinfo-btn" data-toggle="modal" data-target="#projects_modal10">
+                              More Info
+                          </button>
+                      </div>
+                    </div></div>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal 1-->
+        <div class="modal fade" id="projects_modal1" tabindex="-1" role="dialog" aria-labelledby="projects_modal1_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal1_title">Safety-Critical Pacemaker System</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Project Duration: September 2023 - December 2023<br>
+                    Course: MECHTRON 3K04 - Software Development<br><br>
+                    <img src="img/project1_pacemaker_titleimage.png" class="center_item img-fluid" alt="Simulink Pacemaker implementation structure.">
+                    <i style="color: rgb(144, 143, 143)">Figure 1 - Simulink overview for the project.</i>
+                    <br><br>
+
+                    Using a FRDM-K64 board with heart, pacemaker, and accelerometer components on-board, in a team of six we developed a pacemaker model on Simulink for various pacemaker modes
+                    (AOO, VOO, AAI, VVI, and their rate-adaptive versions) adhering to the Boston Scientific pacemaker specifications documentation. We built a python GUI as an external DCM to  
+                    allow for medical parameters to be changed on the DCM, validated and sent to Simulink to update the pacing functionality.
+                    <br><br>
+                    Along with this, we followed the software development processes discussed in class, performed hazard analysis and built a GSN assurance case. This was to emphasize the 
+                    importance of safety in our design.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 2-->
+        <div class="modal fade" id="projects_modal2" tabindex="-1" role="dialog" aria-labelledby="projects_modal2_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal2_title">Cart-Centering Reinforcement Learning Problem</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Project Duration: April 2023<br>
+                    Course: MECHTRON 2MD3 - Data Structures & Algorithms<br><br>
+                    <img src="img/project2_cartcentering_modal1.png" class="center_item img-fluid" style="width:700px" alt="Reinforcement learning results.">
+                    <i style="color: rgb(144, 143, 143)">Figure 1 - Best expression found after running the program.</i>
+                    <br><br>
+                    Used stacks and binary trees to generate mathematical expressions to control the movement of a cart. The code was run over several generations, and through reinforcement 
+                    learning, the best mathematical expression for centering the cart efficiently, was obtained.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 3-->
+        <div class="modal fade" id="projects_modal3" tabindex="-1" role="dialog" aria-labelledby="projects_modal3_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal3_title">7-Segment Display Digital Circuit Optimization</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Project Duration: December 2023<br>
+                  Course: MECHTRON 2MD3 - Data Structures & Algorithms<br><br>
+                  <img src="img/project3_stnumcircuit_1.png" class="center_item img-fluid" style="width:700px" alt="Physical Circuit">
+                  <i style="color: rgb(144, 143, 143)">Figure 1 - Physical build for the circuit.</i>
+                  <br><br>
+                  Used digital logic design with various physical components including boolean logic gates and J-K flip flops. Analytically developed 
+                  a functional circuit, optimized to have the lowest number of physical components (by comparing SOP and POS implementations and simplifying
+                  by replacing a flip flop with a boolean expression). The analytical solution was implemented in Multisim (a circuit analysis software) to
+                  simulate the results, then built in lab with real circuit components.
+                  <br><br>
+                  <img src="img/project3_stnumcircuit_2.png" class="center_item img-fluid" style="width:700px" alt="Multisim Implementation.">
+                  <i style="color: rgb(144, 143, 143)">Figure 2 - Multisim implementation of circuit design.</i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 4-->
+        <div class="modal fade" id="projects_modal4" tabindex="-1" role="dialog" aria-labelledby="projects_modal4_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal4_title">McMaster Grades Visual Dashboard App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Project Duration: August 2023<br>
+                  Personal Project<br><br>
+                  <img src="img/project4_1.png" class="center_item img-fluid" style="width:200px" alt="Grade display format.">
+                  <i style="color: rgb(144, 143, 143)">Figure 1 - Example of how a grade is displayed both numerically and with a circular progress bar. The highest grade is 12 so they progress bar is completely filled in.</i>
+                  <br><br>
+                  Using python, I developed a GUI that used Selenium to scrape the school grades website to pull grades information, and display it in a visual format. For ease, I packaged this into an executable file. 
+                  Features include: login screen, loading splash screen, term selection screen, and grades display screen.
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 5-->
+        <div class="modal fade" id="projects_modal5" tabindex="-1" role="dialog" aria-labelledby="projects_modal5_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal5_title">"Walk-N-Roll": A 2-in-1 Walker-Wheelchair</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Project Duration: March 2022 - April 2022<br>
+                  Course: IBEHS 1P10 - Health Solutions Design Projects I<br><br>
+                  <img src="img/project5_1.jpeg" class="center_item img-fluid" style="width:400px" alt="Wheelchair configuration of prototype.">
+                  <i style="color: rgb(144, 143, 143)">Figure 1 -  Wheelchair configuration of final prototype.</i>
+                  <br><br>
+                  <img src="img/project5_2.jpeg" class="center_item img-fluid" style="width:400px" alt="Walker configuration of prototype.">
+                  <i style="color: rgb(144, 143, 143)">Figure 2 -  Walker configuration of final prototype.</i>
+                  <br><br>
+                  In a group of four, we designed a 2-in-1 convertible walker-wheelchair requested by a real stroke survivor with mobility issues. 
+                  We used bicycle wheels and wood to make the majority of the prototype, and we also used hinges to lock the different configurations, 
+                  and we also made a cushion that could be stored be stored under the seat when switching the configuration. <br> Our group ended up 
+                  being selected to present our project at the iBioMed Showcase.
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 6-->
+        <div class="modal fade" id="projects_modal6" tabindex="-1" role="dialog" aria-labelledby="projects_modal6_title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projects_modal6_title">GenuCheck: A Knee Rehabilitation Device</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Project Duration: January 2022 - March 2022<br>
+                  Course: IBEHS 1P10 - Health Solutions Design Projects I<br><br>
+                  <img src="img/project6_1.png" class="center_item img-fluid" style="width:700px" alt="Knee brace prototype.">
+                  <i style="color: rgb(144, 143, 143)">Figure 1 - Low-level knee brace prototype.</i>
+                  <br><br>
+                  <img src="img/project6_2.png" class="center_item img-fluid" style="width:700px" alt="Graph output with sample monitoring data.">
+                  <i style="color: rgb(144, 143, 143)">Figure 2 -  Sample output for the monitoring visualization feature of the design.</i>
+                  <br><br>
+                  In a group of five, we designed a knee brace with an orientation sensor to detect if a patient's knee had bent too far. 
+                  Practically, this would be used for rehabilitation and monitoring after knee injuries such as MCL or ACL tears. The logic was 
+                  implemented using a Raspberry Pi with an orientation sensor, as well as a buzzer to make a sound and vibrate if a maximum angle threshold 
+                  set by the physician was exceeded. This device would also continuosly keep count of how many times in a day that the maximum angle had been 
+                  passed, and would update a stored graph with tallies for the week, at the end of each day, or if a pushbutton was pressed on the 
+                  Raspberry Pi. This is shown in Figure 2. 
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Modal 7-->
+        <div class="modal fade" id="projects_modal7" tabindex="-1" role="dialog" aria-labelledby="projects_modal7_title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projects_modal7_title">CAD Custom Hip Implant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Project Duration: November 2021 - December 2021<br>
+                Course: IBEHS 1P10 - Health Solutions Design Projects I<br><br>
+                <img src="img/project7_1.png" class="center_item img-fluid" style="width:400px" alt="Autodesk Inventor final CAD model.">
+                <i style="color: rgb(144, 143, 143)">Figure 1 - Autodesk Inventor CAD Model.</i>
+                <br><br>
+                <img src="img/project7_2.png" class="center_item img-fluid" style="width:400px" alt="3D printed implant.">
+                <i style="color: rgb(144, 143, 143)">Figure 2 -  3D printed CAD model, scaled down in size.</i>
+                <br><br>
+                In a group of four, we designed a custom knee brace for a given patient. With a partner, I implemented the design in 
+                Autodesk Inventor. The design included the stem with the femoral head as well as an acetabular cup. We also added a lining 
+                in between the components to prevent erosion from the friction between the femoral head and the acetabular cup.
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 8-->
+        <div class="modal fade" id="projects_modal8" tabindex="-1" role="dialog" aria-labelledby="projects_modal8_title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projects_modal8_title">MagnOstomy</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Project Duration: September 2021 - October 2021<br>
+                Course: IBEHS 1P10 - Health Solutions Design Projects I<br><br>
+                <img src="img/project8_1.png" class="center_item img-fluid" style="width:700px" alt="MagnOstomy Poster.">
+                <i style="color: rgb(144, 143, 143)">Figure 1 - MagnOstomy prototype poster.</i>
+                <br><br>
+                In a group of four, we developed a concept and prototype for an ostomy bag configuration which would discreetly 
+                light up if the configuration was not secure. Using magnets, electrical wires, and a battery to create a series circuit, we 
+                showed how the circuit would light up if the series circuit became disconnected at any of the four corners where magnets were 
+                placed.
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 9-->
+        <div class="modal fade" id="projects_modal9" tabindex="-1" role="dialog" aria-labelledby="projects_modal9_title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projects_modal9_title">Tic Tac Toe GUI</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Project Duration: July 2021<br>
+                Personal Project<br><br>
+                <img src="img/project9_1.png" class="center_item img-fluid" style="width:300px" alt="Tic Tac Toe GUI start screen.">
+                <i style="color: rgb(144, 143, 143)">Figure 1 - Tic Tac Toe GUI board.</i>
+                <br><br>
+                Using Java, I created a GUI of the classic Tic Tac Toe game. Players can either play 2-player, or 1-player against a 
+                CPU which I programmed to have several difficulty level options ranging from easy (completely random moves) to impossible 
+                (blocking all possible double traps).
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 10-->
+        <div class="modal fade" id="projects_modal10" tabindex="-1" role="dialog" aria-labelledby="projects_modal10_title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projects_modal10_title">Matching Game GUI</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Project Duration: June 2021<br>
+                Course: ICS4U - Grade 12 Computer Science<br><br>
+                <img src="img/project10_2.png" class="center_item img-fluid" style="width:300px" alt="Matching Game GUI start screen.">
+                <i style="color: rgb(144, 143, 143)">Figure 1 - Matching Game GUI board.</i>
+                <br><br>
+                Using Java, I created a GUI of the classic Matching game. There is a timer and a limit of moves you can make. Players can choose between 
+                matching symbols or letters, however if the device (sometimes Windows has this issue) doesn't recognize the symbols, then the option "Symbols" will 
+                be replaced with Numbers.
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 11-->
+        <div class="modal fade" id="projects_modal11" tabindex="-1" role="dialog" aria-labelledby="projects_modal11_title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projects_modal11_title">Personal Portfolio Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Project Duration: December 2023 - Current<br>
+                Personal Project<br><br>
+                Using HTML and CSS, along with Bootstrap.js, created a website to showcase my personal portfolio.
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer">
+          <img class="bottom_graphic" src="img/homepage_graphic3_filtered.png">
+          <div class="footer_contact" style="font-size: 2em;font-family: Marker Felt, fantasy;">Contact Me</div>
+          <div class="footer_contact-options">
+            <img src="img/mail.png">
+            <a href="mailto:anjali.kosuri@gmail.com" target="_blank" style="color: black;">anjali.kosuri@gmail.com</a> <br>
+            <img src="img/linkedin.png">
+            <a href="https://linkedin.com/in/anjalikosuri" target="_blank" style="color: black;">linkedin.com/in/anjalikosuri</a> <br>
+            <img src="img/github.png">
+            <a href="https://github.com/kosanj?tab=repositories" target="_blank" style="color: black;">kosanj</a>
+          </div>
+        </div>
+
+
+		<!-- bootstrap required scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>
