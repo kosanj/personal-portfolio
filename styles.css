@@ -345,7 +345,7 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
   }
   
   under-centered{
-    transform: translate(-50%, 20px);
+    transform: translate(-50%, -200px);
   }
   
 }
