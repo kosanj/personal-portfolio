@@ -344,8 +344,8 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
     font-size: 4em;
   }
   
-  under-centered{
-    transform: translate(-50%, -200px);
+  .under-centered{
+    transform: translate(-50%, 60%);
   }
   
 }
