@@ -131,7 +131,7 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
 
 .homepage_graphic{
   position: fixed;
-  bottom: -50;
+  /*bottom: -50;*/
   width: 100%;
   height: 100%;
 }
