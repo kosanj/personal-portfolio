@@ -345,6 +345,6 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
   }
 
   .under-under-centered{ /*resume button*/
-    transform: translate(-50%, 600%);
+    transform: translate(-50%, 500%);
   }
 }
