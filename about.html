@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang = "en">
 
@@ -7,6 +8,9 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 		<!-- general setup -->
 		<title>About</title>
 		<link rel="icon" href="img/logo_anj2.png"> <!--favicon-->
@@ -15,8 +19,6 @@
 
 		<!-- Include jQuery -->
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-		<!-- Include your JavaScript file -->
-		<script src="script.js"></script>
 	</head>
 
 	<body>
@@ -77,60 +79,76 @@
             <div class="about_page">
 
 				<!-- Technical Skills -->
-                <div class="about_page-subtitle">Technical Skills</div>
-                
-                <div class="about_page-technical_skills">
-                    <div class="grid-container">
-                        <div class="grid-item">
-                        	<img src="img/icon1.png" class="about_page-technical_skills-icons">
-							<div class="label">Java</div>
-                        </div>
-                        <div class="grid-item">
-                            <img src="img/icon2.png" class="about_page-technical_skills-icons">
-							<div class="label">Python</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/icon3.png" class="about_page-technical_skills-icons">
-							<div class="label">C++</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills4.png" class="about_page-technical_skills-icons">
-							<div class="label">C</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills5.png" class="about_page-technical_skills-icons">
-							<div class="label">MATLAB</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills6.png" class="about_page-technical_skills-icons">
-							<div class="label">MATLAB Simulink</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills7.png" class="about_page-technical_skills-icons">
-							<div class="label">MATLAB SimBiology</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills8.png" class="about_page-technical_skills-icons">
-							<div class="label">Raspberry Pi</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills9.png" class="about_page-technical_skills-icons">
-							<div class="label">Autodesk Inventor</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills10.png" class="about_page-technical_skills-icons">
-							<div class="label">HTML</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills11.png" class="about_page-technical_skills-icons">
-							<div class="label">CSS</div>
-                        </div>
-						<div class="grid-item">
-                            <img src="img/technical_skills12.png" class="about_page-technical_skills-icons">
-							<div class="label">Javascript</div>
-                        </div>
-                    </div>
-                </div>
+				<div class="about_page-subtitle">Technical Skills</div>
+				<div class="about_page-technical_skills">
+					<div class="swiper mySwiperSkills">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/icon1.png" class="skill-icon">
+								<div class="label">Java</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/icon2.png" class="skill-icon">
+								<div class="label">Python</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/icon3.png" class="skill-icon">
+								<div class="label">C++</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills4.png" class="skill-icon">
+								<div class="label">C</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills5.png" class="skill-icon">
+								<div class="label">MATLAB</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills6.png" class="skill-icon">
+								<div class="label">MATLAB Simulink</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills7.png" class="skill-icon">
+								<div class="label">MATLAB SimBiology</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills8.png" class="skill-icon">
+								<div class="label">Raspberry Pi</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills9.png" class="skill-icon">
+								<div class="label">Autodesk Inventor</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills10.png" class="skill-icon">
+								<div class="label">HTML</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills11.png" class="skill-icon">
+								<div class="label">CSS</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills12.png" class="skill-icon">
+								<div class="label">Javascript</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills13.png" class="skill-icon">
+								<div class="label">C#</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/technical_skills14.webp" class="skill-icon">
+								<div class="label">Angular</div>
+							</div>
+						</div>
+
+						<!-- Navigation buttons -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<br>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
 
 				<!-- Experience -->
 				<div class="about_page-subtitle" style="margin-top: 60px; margin-bottom: 30px;">Experience</div>
@@ -205,6 +223,35 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+		<!-- Initialize Swiper after DOM loads -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const swiperSkills = new Swiper(".mySwiperSkills", {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+				spaceBetween: 20,
+				loop: false,
+				loopFillGroupWithBlank: false,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					320: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 10 },
+					576: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 15 },
+					768: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 20 },
+					992: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 20 },
+					1200: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 25 },
+				},
+				speed: 600
+			});
+		});
+		</script>
 	</body>
 
 </html>
