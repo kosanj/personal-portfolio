@@ -86,6 +86,10 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
   margin-right: 40px;
 }
 
+.dropdown-menu{
+  background-color: #fbfafa;
+}
+
 .navbar-icons-in-dropdown.row.col img{ /* for each individual item in navbar-icons */
   height: 25px;
   width: 30px;
