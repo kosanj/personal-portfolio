@@ -164,6 +164,11 @@ ul li a:hover::before{ /*hover effect; after puts content after/ before does it 
   justify-content: center; /* Center the columns within the row */
 }
 
+.projects-grid .col {
+  flex-grow: 0 !important;
+  padding: 0 30px;
+}
+
 .projects::after{ /*cover up a random white line between the header and the body*/
   content: '';
   width: 100%; height: 40px; /*decorative line - colour is same as page colour by default*/
