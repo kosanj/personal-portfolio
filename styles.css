@@ -1,4 +1,4 @@
-*{  /* star refers to all elements */
+body {  /* for all elements */
   margin: 0;
   padding: 0;
   font-family: 'Dosis', sans-serif;
@@ -12,6 +12,7 @@
   margin: auto;
   display: block;
   z-index: 1000;
+  background-color: #FBFAFA;
 }
 
 .header_bar::after{ /*base state for navbar items - line above being blank*/
