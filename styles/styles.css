@@ -428,6 +428,22 @@ ul li a:hover::before {
     transform: translate(-50%, 60%);
   }
 }
+/* unsupported screen size */
+@media (max-width: 324px) {
+  body > *,
+  .header_bar,
+  .about_page-removeblankline,
+  .projects {
+    display: none;
+  }
+  body::before {
+    content: "Screen width too small to display site.";
+    display: block;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+  }
+}
 .push-up-39 {
   margin-top: -39px;
 }

@@ -42,3 +42,19 @@
   }
   
 }
+
+/* unsupported screen size */
+@media (max-width: 324px) {
+  body > *, .header_bar, .about_page-removeblankline, .projects {
+    display: none;
+  }
+  body::before {
+    content: "Screen width too small to display site.";
+    display: block;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+  }
+}
+
+
