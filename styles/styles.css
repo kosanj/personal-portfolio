@@ -387,8 +387,9 @@ ul li a:hover::before {
   background: #d8b4c2;
   /* color of active dot */
 }
-@media (max-width: 920px) {
-  /*When width is 900 px or less, run these properties*/
+/*Navbar screen size handling*/
+@media (max-width: 957px) {
+  /*When width is less than 958, run these properties*/
   .navbar ul {
     display: none;
   }
@@ -396,19 +397,25 @@ ul li a:hover::before {
     display: none;
   }
 }
-@media (max-width: 948px) {
-  .under-centered {
-    transform: translate(-50%, 200%);
-  }
-}
-@media (min-width: 920px) {
-  /*When width is 900 px or more, run these properties*/
+@media (min-width: 958px) {
+  /*When width is 958 px or more, run these properties*/
   .dropdown {
     display: none;
   }
 }
+/*Welcome text screen size handling*/
+@media (max-width: 948px) {
+  .under-centered {
+    transform: translate(-50%, 180%);
+  }
+}
+@media (min-width: 870px) and (max-width: 947px) {
+  .under-centered {
+    transform: translate(-50%, 350%);
+  }
+}
+/*small screen (ie. phone) compatibility */
 @media (max-width: 473px) {
-  /*small screen (ie. phone) compatibility */
   .projects {
     /*remove LR padding to ensure project will fit in screen*/
     padding: 80px 0px;
