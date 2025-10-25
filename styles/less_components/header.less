@@ -1,0 +1,102 @@
+/*Header*/
+
+.header_bar{
+  position: sticky;
+  top: 30px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  z-index: 1000;
+  background-color: #FBFAFA;
+}
+
+.header_bar::after{ /*base state for navbar items - line above being blank*/
+  content: '';
+  width: 100%; height: 30px; /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px; /*higher value means closer to the top*/
+  z-index:2000;
+  background-color: #FBFAFA;
+}
+
+/*Navigation*/
+
+.navbar{
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+
+// For hovering over each menu option
+ul{
+  flex: 1;
+  text-align: right;
+}
+
+ul li{
+  display: inline-block;
+  list-style: none; /*This stops bullet points from showing*/
+  margin: 0 25px; /* 0px from top and bottom, 25 px from L and R*/
+}
+
+ul li a{
+  text-decoration: none; /*removes underline from link (since we used href)*/
+  color: #000; /*black*/
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::before{ /*base state for navbar items - line above being blank*/
+  content: '';
+  width: 100%; height: 10px; /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -55px; /*higher value means closer to the top*/
+  z-index: 3000;
+  transition: 0.5s; /*makes this take 5 seconds to show - when you hover as specified in the a:hover::after*/
+}
+
+ul li a:hover::before{ /*hover effect; after puts content after/ before does it before (although they both do the same things here); Overall - in hover state the colour effect would be placed after.*/
+  width: 100%; /*specification for the hover effect*/
+  background-color: #88676c; /*f14a60*/
+}
+
+// For contact icons
+.navbar-icons a{
+  text-decoration: none;
+}
+
+.navbar-icons img{ /* for each individual item in navbar-icons */
+  height: 25px;
+  margin-left: 40px;
+  cursor: pointer; /* cursor not automatically changed for images*/
+}
+
+.navbar-icons{ /*for the entire container with navbar-icons items*/
+  margin-left: 40px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+
+// When screen too small, dropdown menu for screen navigation
+.dropdown{
+  margin-right: 40px;
+}
+
+.dropdown-menu{
+  background-color: #fbfafa;
+}
+
+.navbar-icons-in-dropdown.row.col img{ /* for each individual item in navbar-icons */
+  height: 25px;
+  width: 30px;
+  cursor: pointer; /* cursor not automatically changed for images*/
+}
+
+.navbar-icons-in-dropdown{ /*for the entire container with navbar-icons items*/
+  margin-left: 20px;
+  margin-right: 20px;
+}

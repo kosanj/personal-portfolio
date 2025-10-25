@@ -1,0 +1,51 @@
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px; /* Adjusted padding */
+}
+
+.projects-grid {
+  width: 100%; /* Ensures the projects-grid takes full width */
+}
+
+.projects-grid .row .col { /*This max width is what finally centered it as we resize. because before the resize was changing the column widths which was making it not center the actual card*/
+  max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.projects-grid .row {
+  /*display: flex;*/
+  justify-content: center; /* Center the columns within the row */
+}
+
+.projects-grid .col {
+  flex-grow: 0 !important;
+  padding: 0 30px;
+}
+
+.projects::after{ /*cover up a random white line between the header and the body*/
+  content: '';
+  width: 100%; height: 40px; /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  top: 110px; /*higher value means closer to the top*/
+  z-index:100;
+  background-color: #FBFAFA;
+}
+
+.projects-grid .card{
+  /*border-radius: 10%;*/
+  width: 20rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /*border: 2px solid black;*/
+  transition: 0.5s;
+}
+
+.projects-grid .card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px #ae737b, 0 3px 6px #88676c;
+}
+
+.projects-grid .card img{
+  height: 200px;
+}
+

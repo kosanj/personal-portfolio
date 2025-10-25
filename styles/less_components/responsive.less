@@ -1,0 +1,35 @@
+@media (max-width: 920px) { /*When width is 900 px or less, run these properties*/
+  .navbar ul{
+    display: none;
+  }
+  .navbar-icons{
+    display: none;
+  }
+}
+
+@media (max-width: 948px) {
+  .under-centered{
+    transform: translate(-50%, 200%);
+  }
+}
+
+@media (min-width: 920px) { /*When width is 900 px or more, run these properties*/
+  .dropdown{
+    display: none;
+  }
+}
+
+@media (max-width: 473px) { /*small screen (ie. phone) compatibility */
+  .projects{ /*remove LR padding to ensure project will fit in screen*/
+    padding: 80px 0px;
+  }
+
+  .centered{ /*welcome text*/
+    font-size: 4em;
+  }
+  
+  .under-centered{
+    transform: translate(-50%, 60%);
+  }
+  
+}

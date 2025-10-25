@@ -1,0 +1,429 @@
+body {
+  /* for all elements */
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  background-color: #FBFAFA;
+}
+.bottom_graphic {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  /*transform: translate(0,-10px);*/
+  z-index: -1000;
+}
+.footer {
+  position: relative;
+  width: 100%;
+}
+.footer_contact {
+  z-index: 1000;
+  position: absolute;
+  left: 10%;
+  bottom: -220px;
+  background-color: rgba(255, 255, 255, 0);
+  /*fully transparent*/
+}
+.footer_contact-options {
+  z-index: 1000;
+  position: absolute;
+  left: 10%;
+  bottom: -300px;
+  background-color: rgba(255, 255, 255, 0);
+  /*fully transparent*/
+}
+.footer_contact-options img {
+  text-decoration: none;
+  width: 20px;
+  height: auto;
+  transform: translate(0px, -2px);
+  background-color: transparent;
+}
+/*Header*/
+.header_bar {
+  position: sticky;
+  top: 30px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  z-index: 1000;
+  background-color: #FBFAFA;
+}
+.header_bar::after {
+  /*base state for navbar items - line above being blank*/
+  content: '';
+  width: 100%;
+  height: 30px;
+  /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  /*higher value means closer to the top*/
+  z-index: 2000;
+  background-color: #FBFAFA;
+}
+/*Navigation*/
+.navbar {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+ul {
+  flex: 1;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+  /*This stops bullet points from showing*/
+  margin: 0 25px;
+  /* 0px from top and bottom, 25 px from L and R*/
+}
+ul li a {
+  text-decoration: none;
+  /*removes underline from link (since we used href)*/
+  color: #000;
+  /*black*/
+  padding: 0 10px;
+  position: relative;
+}
+ul li a::before {
+  /*base state for navbar items - line above being blank*/
+  content: '';
+  width: 100%;
+  height: 10px;
+  /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -55px;
+  /*higher value means closer to the top*/
+  z-index: 3000;
+  transition: 0.5s;
+  /*makes this take 5 seconds to show - when you hover as specified in the a:hover::after*/
+}
+ul li a:hover::before {
+  /*hover effect; after puts content after/ before does it before (although they both do the same things here); Overall - in hover state the colour effect would be placed after.*/
+  width: 100%;
+  /*specification for the hover effect*/
+  background-color: #88676c;
+  /*f14a60*/
+}
+.navbar-icons a {
+  text-decoration: none;
+}
+.navbar-icons img {
+  /* for each individual item in navbar-icons */
+  height: 25px;
+  margin-left: 40px;
+  cursor: pointer;
+  /* cursor not automatically changed for images*/
+}
+.navbar-icons {
+  /*for the entire container with navbar-icons items*/
+  margin-left: 40px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+.dropdown {
+  margin-right: 40px;
+}
+.dropdown-menu {
+  background-color: #fbfafa;
+}
+.navbar-icons-in-dropdown.row.col img {
+  /* for each individual item in navbar-icons */
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+  /* cursor not automatically changed for images*/
+}
+.navbar-icons-in-dropdown {
+  /*for the entire container with navbar-icons items*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*centered welcome text*/
+.centered {
+  font-size: 8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  /*fully transparent*/
+}
+.under-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 400%);
+  background-color: rgba(255, 255, 255, 0);
+  /*fully transparent*/
+}
+.under-under-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 400%);
+  background-color: rgba(255, 255, 255, 0);
+  /*fully transparent*/
+}
+.center_item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage_graphic {
+  position: fixed;
+  /*bottom: -50;*/
+  width: 100%;
+  height: 100%;
+}
+.mainpage {
+  z-index: 500;
+}
+.about_page-removeblankline {
+  /*helps with covering up random white line*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_page-removeblankline::after {
+  /*cover up a random white line between the header and the body*/
+  content: '';
+  width: 100%;
+  height: 40px;
+  /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  top: 110px;
+  /*higher value means closer to the top*/
+  z-index: 100;
+  background-color: #FBFAFA;
+}
+.about_page_container {
+  padding: 80px;
+}
+.about_page {
+  display: flex;
+  flex-direction: column;
+  /* Ensure a column layout for child elements */
+}
+.about_page-subtitle {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  /* Make the text bold */
+  text-shadow: 2px 5px 10px #a58c91;
+  /* Adjust the shadow values as needed */
+  color: #3a3434;
+  /* Set the text color */
+}
+.about_page-technical_skills {
+  margin-top: 40px;
+}
+.about_page-technical_skills-icons {
+  height: 100px;
+  /*width auto-resizes to accomodate height without warping image*/
+  max-width: 200px;
+}
+.about_page-technical_skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  /* Adjust the gap as needed */
+}
+.about_page-technical_skills .grid-container .grid-item {
+  text-align: center;
+}
+.about_page-technical_skills .label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.about_page-experience .card {
+  /*border-radius: 10%;*/
+  width: 20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /*border: 2px solid black;*/
+  transition: 0.5s;
+}
+.about_page-experience .card img {
+  width: 100%;
+  max-width: 300px;
+}
+.about_page_container {
+  /*Just to ensure bottom_graphic doesn't cover page content during resize*/
+  z-index: 100;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px;
+  /* Adjusted padding */
+}
+.projects-grid {
+  width: 100%;
+  /* Ensures the projects-grid takes full width */
+}
+.projects-grid .row .col {
+  /*This max width is what finally centered it as we resize. because before the resize was changing the column widths which was making it not center the actual card*/
+  max-width: 400px;
+  /* Adjust the max-width as needed */
+}
+.projects-grid .row {
+  /*display: flex;*/
+  justify-content: center;
+  /* Center the columns within the row */
+}
+.projects-grid .col {
+  flex-grow: 0 !important;
+  padding: 0 30px;
+}
+.projects::after {
+  /*cover up a random white line between the header and the body*/
+  content: '';
+  width: 100%;
+  height: 40px;
+  /*decorative line - colour is same as page colour by default*/
+  position: absolute;
+  top: 110px;
+  /*higher value means closer to the top*/
+  z-index: 100;
+  background-color: #FBFAFA;
+}
+.projects-grid .card {
+  /*border-radius: 10%;*/
+  width: 20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /*border: 2px solid black;*/
+  transition: 0.5s;
+}
+.projects-grid .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px #ae737b, 0 3px 6px #88676c;
+}
+.projects-grid .card img {
+  height: 200px;
+}
+/*Modal*/
+.modal-backdrop {
+  background-color: transparent;
+}
+.modal {
+  z-index: 6000;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+/*Buttons*/
+.custom-moreinfo-btn {
+  background-color: #ae737b;
+  color: #fff;
+  /* Set text color for contrast */
+}
+.custom-moreinfo-btn:hover {
+  background-color: #b6868c;
+  color: #fff;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/*Skills badge*/
+.badge-skill {
+  color: #424242;
+  background-color: #ddc1cc;
+}
+/*Swiper carousel styles*/
+.mySwiperSkills {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.swiper-slide {
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+}
+.swiper-slide {
+  background: transparent;
+  /* transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  /* arrow color */
+  width: 35px;
+  height: 35px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  /* arrow size */
+}
+.swiper-pagination-bullet {
+  background: #000;
+  /* color of dots */
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: #d8b4c2;
+  /* color of active dot */
+}
+@media (max-width: 920px) {
+  /*When width is 900 px or less, run these properties*/
+  .navbar ul {
+    display: none;
+  }
+  .navbar-icons {
+    display: none;
+  }
+}
+@media (max-width: 948px) {
+  .under-centered {
+    transform: translate(-50%, 200%);
+  }
+}
+@media (min-width: 920px) {
+  /*When width is 900 px or more, run these properties*/
+  .dropdown {
+    display: none;
+  }
+}
+@media (max-width: 473px) {
+  /*small screen (ie. phone) compatibility */
+  .projects {
+    /*remove LR padding to ensure project will fit in screen*/
+    padding: 80px 0px;
+  }
+  .centered {
+    /*welcome text*/
+    font-size: 4em;
+  }
+  .under-centered {
+    transform: translate(-50%, 60%);
+  }
+}
+.push-up-20 {
+  margin-top: -20px;
+}
+.push-up-39 {
+  margin-top: -39px;
+}
